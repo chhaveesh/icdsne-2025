@@ -4,9 +4,10 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
 import About from '@/components/home/About';
-import Programs from '@/components/home/Programs';
-import Mission from '@/components/home/Mission';
-import Gallery from '@/components/home/Gallery';
+import CallForPapers from '@/components/home/CallForPapers';
+import Speakers from '@/components/home/Speakers';
+import Schedule from '@/components/home/Schedule';
+import Registration from '@/components/home/Registration';
 import Contact from '@/components/home/Contact';
 
 const Index = () => {
@@ -47,9 +48,10 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Programs />
-        <Mission />
-        <Gallery />
+        <CallForPapers />
+        <Speakers />
+        <Schedule />
+        <Registration />
         <Contact />
       </main>
       

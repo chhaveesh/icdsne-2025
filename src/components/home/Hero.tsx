@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Calendar, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Hero = () => {
@@ -16,23 +16,23 @@ const Hero = () => {
           <div className="flex-1 space-y-6 md:space-y-8 animate-fade-in">
             <div className="inline-block">
               <span className="px-3 py-1 rounded-full bg-icds-blue/10 text-icds-blue text-sm font-medium">
-                Integrated Child Development Services
+                International Conference
               </span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-icds-dark leading-tight">
-              Building <span className="text-icds-blue">Futures</span>,<br />
-              Nurturing <span className="text-icds-green">Growth</span>
+              Data <span className="text-icds-blue">Science</span> &<br />
+              <span className="text-icds-green">Engineering</span> 2024
             </h1>
             
             <p className="max-w-2xl text-lg md:text-xl text-muted-foreground">
-              Providing comprehensive health, nutrition, and early education services 
-              to transform the lives of children and mothers across New England.
+              Join us for the premier international conference exploring the latest innovations
+              in data science, machine learning, AI, and engineering applications.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a 
-                href="#programs"
+                href="#registration"
                 className={cn(
                   "inline-flex items-center justify-center px-6 py-3 rounded-full",
                   "bg-icds-blue text-white font-medium",
@@ -42,11 +42,11 @@ const Hero = () => {
                   "btn-hover-effect"
                 )}
               >
-                Explore Our Programs
+                Register Now
               </a>
               
               <a 
-                href="#contact"
+                href="#call-for-papers"
                 className={cn(
                   "inline-flex items-center justify-center px-6 py-3 rounded-full",
                   "bg-white text-icds-dark font-medium",
@@ -56,8 +56,19 @@ const Hero = () => {
                   "hover:bg-gray-50"
                 )}
               >
-                Contact Us
+                Submit Paper
               </a>
+            </div>
+
+            <div className="flex flex-wrap gap-6 pt-4">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-5 h-5 text-icds-blue" />
+                <span className="text-muted-foreground">August 12-14, 2024</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-icds-blue" />
+                <span className="text-muted-foreground">New England University, Boston</span>
+              </div>
             </div>
           </div>
 
@@ -67,8 +78,8 @@ const Hero = () => {
               <div className="absolute inset-0 bg-white rounded-2xl shadow-xl"></div>
               <div className="relative h-full w-full overflow-hidden rounded-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1560541919-eb5c2da6a5a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Children at ICDS center" 
+                  src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="Data Science Conference" 
                   className="object-cover h-full w-full"
                 />
               </div>

@@ -6,8 +6,10 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { name: 'Home', path: '#home' },
   { name: 'About', path: '#about' },
-  { name: 'Programs', path: '#programs' },
-  { name: 'Gallery', path: '#gallery' },
+  { name: 'Call for Papers', path: '#call-for-papers' },
+  { name: 'Speakers', path: '#speakers' },
+  { name: 'Schedule', path: '#schedule' },
+  { name: 'Registration', path: '#registration' },
   { name: 'Contact', path: '#contact' },
 ];
 
@@ -24,8 +26,8 @@ const Header = () => {
       // Update active section based on scroll position
       const sections = document.querySelectorAll('section[id]');
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.offsetHeight;
+        const sectionTop = (section as HTMLElement).offsetTop - 100;
+        const sectionHeight = (section as HTMLElement).offsetHeight;
         const sectionId = section.getAttribute('id') || '';
         
         if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
@@ -54,7 +56,7 @@ const Header = () => {
         <a href="#home" className="flex items-center gap-2 z-10">
           <div className="font-display font-bold text-xl md:text-2xl">
             <span className="text-icds-blue">ICDS</span>
-            <span className="text-icds-dark"> New England</span>
+            <span className="text-icds-dark">NE 2024</span>
           </div>
         </a>
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Send, Mail, MapPin, Phone, Clock } from 'lucide-react';
+import { Send, Mail, MapPin, Phone } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">Contact Us</h2>
           <p className="section-subtitle">
-            Get in touch with us for more information about our services and programs.
+            Get in touch with the ICDSNE organizing committee for any queries about the conference.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
-                  placeholder="How can we help?"
+                  placeholder="Query about paper submission"
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-icds-blue/50 focus:border-transparent transition-all"
                 />
               </div>
@@ -89,8 +89,9 @@ const Contact = () => {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-icds-dark mb-1">Our Location</h4>
-                    <p className="text-muted-foreground">ICDS Office, New England, Main Street, New England - 110001</p>
+                    <h4 className="text-lg font-semibold text-icds-dark mb-1">Conference Venue</h4>
+                    <p className="text-muted-foreground">New England University Conference Center</p>
+                    <p className="text-muted-foreground">123 University Drive, Boston, MA 02115</p>
                   </div>
                 </div>
                 
@@ -101,7 +102,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-icds-dark mb-1">Email Us</h4>
                     <p className="text-muted-foreground">info@icdsne.in</p>
-                    <p className="text-muted-foreground">support@icdsne.in</p>
+                    <p className="text-muted-foreground">papers@icdsne.in (for submission inquiries)</p>
                   </div>
                 </div>
                 
@@ -111,34 +112,23 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-icds-dark mb-1">Call Us</h4>
-                    <p className="text-muted-foreground">+91 12345 67890</p>
-                    <p className="text-muted-foreground">+91 98765 43210</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-full bg-blue-50 text-icds-blue flex-shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-icds-dark mb-1">Working Hours</h4>
-                    <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-muted-foreground">Saturday: 9:00 AM - 1:00 PM</p>
+                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">Mon-Fri, 9:00 AM - 5:00 PM (EST)</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            {/* Map iframe placeholder */}
+            {/* Map iframe */}
             <div className="bg-white rounded-2xl p-4 shadow-md h-60 overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9292381792257!2d77.21379907478477!3d28.632336683900138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd366195ee45%3A0x1b8b2652b8c7447a!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1688637657204!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2319571603944!2d-71.09066492424329!3d42.35984434006232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a5cb45cc3d%3A0x82977e2edf765a28!2sBoston%2C%20MA%2C%20USA!5e0!3m2!1sen!2sin!4v1688637657204!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen 
                 loading="lazy"
-                title="ICDS Office Location"
+                title="Conference Location"
                 className="rounded-xl"
               ></iframe>
             </div>
