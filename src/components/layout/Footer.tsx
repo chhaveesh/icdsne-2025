@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MapPin, Phone, Twitter, Linkedin, Facebook, GitHub } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Linkedin, Facebook, Github } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a href="https://github.com" className="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
-                <GitHub size={20} />
+                <Github size={20} />
               </a>
             </div>
           </div>
