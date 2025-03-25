@@ -53,7 +53,12 @@ const Header = () => {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2 z-10">
+        <a href="#home" className="flex items-center gap-3 z-10">
+          <img 
+            src="/lovable-uploads/83e0eb93-1db1-4923-908c-f1bdcf4b8d3c.png" 
+            alt="NITK Logo" 
+            className="h-12 w-auto"
+          />
           <div className="font-display font-bold text-xl md:text-2xl">
             <span className="text-icds-blue">ICDS</span>
             <span className="text-icds-dark">NE 2024</span>
