@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-display font-semibold mb-4">ICDSNE 2024</h3>
             <p className="text-gray-300 leading-relaxed">
-              International Conference on Data Science and Engineering is a premier forum for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns in the field.
+              International Conference on Data Science and Engineering (ICDSNE) is a premier forum for the presentation of new advances and research results in the fields of Data Science and Engineering.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="https://twitter.com" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
@@ -65,15 +65,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-icds-blue mt-1 flex-shrink-0" />
-                <p className="text-gray-300">New England University Conference Center, 123 University Drive, Boston, MA 02115</p>
+                <p className="text-gray-300">NIT Karnataka, Surathkal, Mangalore - 575025, Karnataka, India</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-icds-blue flex-shrink-0" />
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-300">+91 824 2474000</p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-icds-blue flex-shrink-0" />
-                <p className="text-gray-300">info@icdsne.in</p>
+                <p className="text-gray-300">icdsne@nitk.edu.in</p>
               </div>
             </div>
           </div>
@@ -82,6 +82,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400 text-sm">
           <p>© {currentYear} International Conference on Data Science and Engineering. All Rights Reserved.</p>
+          <p className="mt-2">Developed by Department of Information Technology, NITK</p>
         </div>
       </div>
     </footer>
