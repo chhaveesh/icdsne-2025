@@ -1,12 +1,18 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu';
 
 const navLinks = [
   { name: 'Home', path: '#home' },
   { name: 'About', path: '#about' },
-  { name: 'Call for Papers', path: '#call-for-papers' },
+  // Call for Papers is handled separately with dropdown
   { name: 'Speakers', path: '#speakers' },
   { name: 'Schedule', path: '#schedule' },
   { name: 'Registration', path: '#registration' },
@@ -79,6 +85,24 @@ const Header = () => {
               {link.name}
             </a>
           ))}
+          
+          {/* Call for Papers Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="nav-link flex items-center gap-1">
+              Call for Papers <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="bg-white w-48">
+              <DropdownMenuItem className="cursor-pointer">
+                <a href="#call-for-papers" className="w-full" onClick={handleLinkClick}>Call for Papers</a>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="cursor-pointer">
+                <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="guidelines"]')?.scrollIntoView();}}>Authors Guidelines</a>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="cursor-pointer">
+                <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="publication"]')?.scrollIntoView();}}>Publication</a>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
 
         {/* Mobile Navigation Toggle */}
@@ -108,6 +132,24 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
+            
+            {/* Mobile Call for Papers Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-xl font-medium text-foreground hover:text-icds-blue transition-colors flex items-center gap-1">
+                Call for Papers <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center" className="bg-white">
+                <DropdownMenuItem className="cursor-pointer">
+                  <a href="#call-for-papers" className="w-full" onClick={handleLinkClick}>Call for Papers</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="cursor-pointer">
+                  <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="guidelines"]')?.scrollIntoView();}}>Authors Guidelines</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="cursor-pointer">
+                  <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="publication"]')?.scrollIntoView();}}>Publication</a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
