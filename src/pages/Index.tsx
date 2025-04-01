@@ -50,13 +50,13 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Committees />
         <ImportantDates />
         <CallForPapers />
         <Speakers />
         <Schedule />
         <Registration />
         <Contact />
+        <Committees />
       </main>
       
       <Footer />
