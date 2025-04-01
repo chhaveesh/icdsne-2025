@@ -19,7 +19,7 @@ const speakers = [
     name: "Prof. Santosh Biswas",
     role: "AI Research Director",
     affiliation: "Stanford University",
-    image: "public/sb.jpg",
+    image: "/sb.jpg",
     bio: "Expert in machine learning applications for healthcare",
     social: {
       twitter: "https://twitter.com",
