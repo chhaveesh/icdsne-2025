@@ -40,18 +40,16 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">About ICDSNE</h2>
           <p className="section-subtitle">
-            International Conference on Data Science and Engineering (ICDSNE) is a premier forum for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns in the field.
+          Third International Conference on Data Science and Network Engineering (ICDSNE 2025) is being organized by the Department of Computer Science and Engineering, National Institute of Technology Agartala (NIT Agartala), India, in hybrid mode (online/in-person) on 18-19 July, 2025.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6 order-2 lg:order-1">
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-icds-dark">Our Mission & Goals</h3>
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-icds-dark">International Conference On Data Science and Network Engineering
+</h3>
             <p className="text-muted-foreground leading-relaxed">
-              ICDSNE aims to bring together leading academic scientists, researchers, and research scholars to exchange and share their experiences and research results on all aspects of Data Science and Engineering. It also provides an interdisciplinary platform for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, and concerns, practical challenges encountered, and the solutions adopted.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              The conference covers a wide range of topics including machine learning, big data analytics, data visualization, artificial intelligence, deep learning, natural language processing, and their applications across various domains.
+            Third International Conference on Data Science and Network Engineering (ICDSNE 2025) is being organized by the Department of Computer Science and Engineering, National Institute of Technology Agartala (NIT Agartala), India, in hybrid mode (online/in-person) on 18-19 July, 2025. This institute is an Institution of National Importance by Ministry of Education, Govt. of India, and it is located in Tripura, India. There are 4702 students enrolled in different undergraduate, post-graduate, and PhD programmes at NIT Agartala. This institute supports excellent teaching and research environments to produce leaders, who can make a difference in the world. ICDSNE 2025 is a non-profitable conference, and it provides an opportunity for researchers, academicians, and industry professionals to present their research work on data science and network engineering. The main objective of this conference is to bring together researchers and practitioners in the world working on data science and network engineering, so that they can share ideas, innovations, and recent trends in their respective areas to address real-time problems. ICDSNE 2025 will feature a range of presentations on the latest research activities, as well as stimulating talks, and keynote addresses. There are multiple tracks in the conference covering almost all the areas of data science and network engineering. The organizing committee is confident that this conference will provide a platform for researchers to share their ideas and to have future collaboration with different people across the world. All accepted, registered, and presented papers will be included in the proceedings of ICDSNE 2025.
             </p>
             <div className="pt-4">
               <a 
@@ -72,7 +70,7 @@ const About = () => {
           <div className="relative order-1 lg:order-2">
             <div className="aspect-video max-w-lg mx-auto rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                src="https://nita.ac.in/images/Banner-Image-hostel.jpg" 
                 alt="Data Science Conference" 
                 className="object-cover h-full w-full"
               />

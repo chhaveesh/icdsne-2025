@@ -4,10 +4,10 @@ import { Linkedin, Twitter, Globe } from 'lucide-react';
 
 const speakers = [
   {
-    name: "Dr. Sarah Johnson",
+    name: "Prof. Santosh Biswas",
     role: "AI Research Director",
     affiliation: "Stanford University",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    image: "public/sb.jpg",
     bio: "Expert in machine learning applications for healthcare",
     social: {
       twitter: "https://twitter.com",
@@ -16,11 +16,11 @@ const speakers = [
     }
   },
   {
-    name: "Prof. James Wilson",
-    role: "Head of Data Science",
-    affiliation: "MIT",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Pioneer in deep learning architectures",
+    name: "Prof. Santosh Biswas",
+    role: "AI Research Director",
+    affiliation: "Stanford University",
+    image: "public/sb.jpg",
+    bio: "Expert in machine learning applications for healthcare",
     social: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
@@ -28,23 +28,22 @@ const speakers = [
     }
   },
   {
-    name: "Dr. Emily Chen",
-    role: "Chief Data Scientist",
-    affiliation: "Google Research",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Renowned for work on large language models",
+    name: "Prof. Santosh Biswas",
+    role: "AI Research Director",
+    affiliation: "Stanford University",
+    image: "public/sb.jpg",
+    bio: "Expert in machine learning applications for healthcare",
     social: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
       website: "https://example.com",
     }
-  },
-  {
-    name: "Prof. David Kim",
-    role: "Director",
-    affiliation: "AI Ethics Institute",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    bio: "Leading researcher in ethical AI and governance",
+  },{
+    name: "Prof. Santosh Biswas",
+    role: "AI Research Director",
+    affiliation: "Stanford University",
+    image: "public/sb.jpg",
+    bio: "Expert in machine learning applications for healthcare",
     social: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",

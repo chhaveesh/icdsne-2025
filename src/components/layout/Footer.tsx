@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MapPin, Phone, Twitter, Linkedin, Facebook, Github } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Linkedin, Facebook, Github ,X} from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Column 1: About */}
           <div className="space-y-4">
-            <h3 className="text-xl font-display font-semibold mb-4">ICDSNE 2024</h3>
+            <h3 className="text-xl font-display font-semibold mb-4">ICDSNE 2025</h3>
             <p className="text-gray-300 leading-relaxed">
               International Conference on Data Science and Engineering (ICDSNE) is a premier forum for the presentation of new advances and research results in the fields of Data Science and Engineering.
             </p>
@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-icds-blue mt-1 flex-shrink-0" />
-                <p className="text-gray-300">NIT Karnataka, Surathkal, Mangalore - 575025, Karnataka, India</p>
+                <p className="text-gray-300">NIT Agartala,Tripura, India,PIN: 799046</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-icds-blue flex-shrink-0" />
@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-icds-blue flex-shrink-0" />
-                <p className="text-gray-300">icdsne@nitk.edu.in</p>
+                <p className="text-gray-300">icdsne@gmail.in</p>
               </div>
             </div>
           </div>
@@ -82,7 +82,15 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400 text-sm">
           <p>© {currentYear} International Conference on Data Science and Engineering. All Rights Reserved.</p>
-          <p className="mt-2">Developed by Department of Information Technology, NITK</p>
+          <p className="mt-2 flex items-center justify-center gap-2">
+            Developed by Chhaveesh Manocha
+            <a href="https://x.com/chhaveesh33469" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+              <Twitter size={16} />
+            </a>
+            <a href="https://www.linkedin.com/in/chhaveesh/" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <Linkedin size={16} />
+            </a>
+            </p>
         </div>
       </div>
     </footer>

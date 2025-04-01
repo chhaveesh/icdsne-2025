@@ -22,12 +22,11 @@ const Hero = () => {
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-icds-dark leading-tight">
               Data <span className="text-icds-blue">Science</span> &<br />
-              <span className="text-icds-green">Engineering</span> 2024
+              <span className="text-icds-green">Engineering</span> 2025
             </h1>
             
             <p className="max-w-2xl text-lg md:text-xl text-muted-foreground">
-              Join us for the premier international conference exploring the latest innovations
-              in data science, machine learning, AI, and engineering applications.
+            Third International Conference on Data Science and Network Engineering (ICDSNE 2025) is being organized by the Department of Computer Science and Engineering, National Institute of Technology Agartala (NIT Agartala), India, in hybrid mode (online/in-person) on 18-19 July, 2025.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -63,11 +62,11 @@ const Hero = () => {
             <div className="flex flex-wrap gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-icds-blue" />
-                <span className="text-muted-foreground">August 12-14, 2024</span>
+                <span className="text-muted-foreground">18-19 July, 2025</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-icds-blue" />
-                <span className="text-muted-foreground">New England University, Boston</span>
+                <span className="text-muted-foreground">National Institute of Technology Agartala, India</span>
               </div>
             </div>
           </div>
@@ -78,7 +77,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-white rounded-2xl shadow-xl"></div>
               <div className="relative h-full w-full overflow-hidden rounded-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  src="https://www.nita.ac.in/images/Gallary-3.jpg" 
                   alt="Data Science Conference" 
                   className="object-cover h-full w-full"
                 />

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -122,59 +121,10 @@ const scheduleData = {
       type: "social",
     },
   ],
-  day3: [
-    {
-      time: "08:30 - 09:00",
-      title: "Morning Coffee",
-      type: "break",
-    },
-    {
-      time: "09:00 - 10:00",
-      title: "Keynote: AI Ethics and Governance",
-      speaker: "Prof. David Kim",
-      location: "Main Hall",
-      type: "keynote",
-    },
-    {
-      time: "10:00 - 10:30",
-      title: "Coffee Break",
-      type: "break",
-    },
-    {
-      time: "10:30 - 12:00",
-      title: "Session 5: Big Data Applications",
-      speaker: "Various Presenters",
-      location: "Room A",
-      type: "session",
-    },
-    {
-      time: "12:00 - 13:30",
-      title: "Lunch Break",
-      type: "break",
-    },
-    {
-      time: "13:30 - 15:00",
-      title: "Poster Session",
-      location: "Exhibition Hall",
-      type: "poster",
-    },
-    {
-      time: "15:00 - 15:30",
-      title: "Coffee Break",
-      type: "break",
-    },
-    {
-      time: "15:30 - 16:30",
-      title: "Award Ceremony & Closing Remarks",
-      speaker: "Conference Chairs",
-      location: "Main Hall",
-      type: "ceremony",
-    },
-  ],
 };
 
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState<'day1' | 'day2' | 'day3'>('day1');
+  const [activeDay, setActiveDay] = useState<'day1' | 'day2'>('day1');
 
   return (
     <section id="schedule" className="section-padding bg-icds-gray">
@@ -182,7 +132,7 @@ const Schedule = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">Conference Schedule</h2>
           <p className="section-subtitle">
-            Three days of insightful sessions, workshops, and networking opportunities.
+            Two days of insightful sessions, workshops, and networking opportunities.
           </p>
         </div>
 
@@ -198,7 +148,7 @@ const Schedule = () => {
                   : "text-gray-600 hover:text-gray-900"
               )}
             >
-              Day 1 (Aug 12)
+              Day 1 (18 July, 2025)
             </button>
             <button
               onClick={() => setActiveDay('day2')}
@@ -209,18 +159,7 @@ const Schedule = () => {
                   : "text-gray-600 hover:text-gray-900"
               )}
             >
-              Day 2 (Aug 13)
-            </button>
-            <button
-              onClick={() => setActiveDay('day3')}
-              className={cn(
-                "px-6 py-2 rounded-full text-sm font-medium transition-all",
-                activeDay === 'day3'
-                  ? "bg-icds-blue text-white shadow-sm"
-                  : "text-gray-600 hover:text-gray-900"
-              )}
-            >
-              Day 3 (Aug 14)
+              Day 2 (19 July, 2025)
             </button>
           </div>
         </div>
@@ -239,7 +178,6 @@ const Schedule = () => {
                   item.type === 'workshop' ? "border-green-400 bg-green-50/50" :
                   item.type === 'panel' ? "border-purple-400 bg-purple-50/50" :
                   item.type === 'social' ? "border-pink-400 bg-pink-50/50" :
-                  item.type === 'poster' ? "border-teal-400 bg-teal-50/50" :
                   "border-gray-300 bg-gray-50/50"
                 )}
               >
@@ -258,18 +196,6 @@ const Schedule = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            The detailed program with paper presentations will be available after the notification of acceptance.
-          </p>
-          <a
-            href="#"
-            className="inline-flex items-center text-icds-blue hover:text-icds-blue/80 font-medium"
-          >
-            Download Full Schedule PDF
-          </a>
         </div>
       </div>
     </section>
