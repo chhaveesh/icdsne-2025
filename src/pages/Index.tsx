@@ -9,6 +9,8 @@ import Speakers from '@/components/home/Speakers';
 import Schedule from '@/components/home/Schedule';
 import Registration from '@/components/home/Registration';
 import Contact from '@/components/home/Contact';
+import Committees from '@/components/home/Committees';
+import ImportantDates from '@/components/home/ImportantDates';
 
 const Index = () => {
   // Intersection Observer for animations
@@ -48,6 +50,8 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <About />
+        <Committees />
+        <ImportantDates />
         <CallForPapers />
         <Speakers />
         <Schedule />
