@@ -1,30 +1,11 @@
-<<<<<<< HEAD
 
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
-=======
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
->>>>>>> 587fd0c (eveverthing changed according to nit)
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-<<<<<<< HEAD
-  DropdownMenuTrigger
-} from '@/components/ui/dropdown-menu';
-
-const navLinks = [
-  { name: 'Home', path: '#home' },
-  { name: 'About', path: '#about' },
-  // Call for Papers is handled separately with dropdown
-  { name: 'Speakers', path: '#speakers' },
-  { name: 'Schedule', path: '#schedule' },
-  { name: 'Registration', path: '#registration' },
-  { name: 'Contact', path: '#contact' },
-=======
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -36,7 +17,6 @@ const navLinks = [
   { name: "Important Dates", path: "#important-dates" },
   { name: "Registration", path: "#registration" },
   { name: "Contact", path: "#contact" },
->>>>>>> 587fd0c (eveverthing changed according to nit)
 ];
 
 const Header = () => {
@@ -66,33 +46,14 @@ const Header = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <header 
-      className={cn(
-        'fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 py-4',
-        isScrolled ? 'glass shadow-sm py-3' : 'bg-transparent'
-      )}
-    >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-3 z-10">
-          <img 
-            src="/lovable-uploads/83e0eb93-1db1-4923-908c-f1bdcf4b8d3c.png" 
-            alt="NITK Logo" 
-            className="h-12 w-auto"
-          />
-          <div className="font-display font-bold text-xl md:text-2xl">
-            <span className="text-icds-blue">ICDS</span>
-            <span className="text-icds-dark">NE 2024</span>
-=======
     <header className={cn("fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 py-4", isScrolled ? "glass shadow-sm py-3" : "bg-transparent")}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 z-10">
-          <img src="public/nit_logo.jpg" alt="NIT Logo" className="h-12 w-auto" />
+          <img src="/lovable-uploads/83e0eb93-1db1-4923-908c-f1bdcf4b8d3c.png" alt="NITK Logo" className="h-12 w-auto" />
           <div className="font-display font-bold text-xl md:text-2xl whitespace-nowrap">
             <span className="text-icds-blue">ICDSNE</span>
             <span className="text-icds-dark"> 2025</span>
->>>>>>> 587fd0c (eveverthing changed according to nit)
           </div>
         </a>
 
@@ -103,23 +64,6 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-<<<<<<< HEAD
-          
-          {/* Call for Papers Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="nav-link flex items-center gap-1">
-              Call for Papers <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="bg-white w-48">
-              <DropdownMenuItem className="cursor-pointer">
-                <a href="#call-for-papers" className="w-full" onClick={handleLinkClick}>Call for Papers</a>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="cursor-pointer">
-                <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="guidelines"]')?.scrollIntoView();}}>Authors Guidelines</a>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="cursor-pointer">
-                <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="publication"]')?.scrollIntoView();}}>Publication</a>
-=======
 
           {/* Call for Papers Dropdown */}
           <DropdownMenu>
@@ -150,7 +94,6 @@ const Header = () => {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <a href="https://link.springer.com/book/10.1007/978-981-99-6755-1">ICDSNE 2023</a>
->>>>>>> 587fd0c (eveverthing changed according to nit)
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -169,23 +112,6 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-<<<<<<< HEAD
-            
-            {/* Mobile Call for Papers Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-xl font-medium text-foreground hover:text-icds-blue transition-colors flex items-center gap-1">
-                Call for Papers <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="center" className="bg-white">
-                <DropdownMenuItem className="cursor-pointer">
-                  <a href="#call-for-papers" className="w-full" onClick={handleLinkClick}>Call for Papers</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer">
-                  <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="guidelines"]')?.scrollIntoView();}}>Authors Guidelines</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer">
-                  <a href="#call-for-papers" className="w-full" onClick={() => {handleLinkClick(); document.querySelector('[data-section="publication"]')?.scrollIntoView();}}>Publication</a>
-=======
 
             {/* Call for Papers Dropdown */}
             <DropdownMenu>
@@ -216,7 +142,6 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <a href="https://link.springer.com/book/10.1007/978-981-99-6755-1">ICDSNE 2023</a>
->>>>>>> 587fd0c (eveverthing changed according to nit)
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
