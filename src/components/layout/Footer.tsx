@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MapPin, Phone, Twitter, Linkedin, Facebook, Github ,X} from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Linkedin, Facebook, Github, X } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,6 +42,9 @@ const Footer = () => {
                 <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-200">About</a>
               </li>
               <li>
+                <a href="#important-dates" className="text-gray-300 hover:text-white transition-colors duration-200">Important Dates</a>
+              </li>
+              <li>
                 <a href="#call-for-papers" className="text-gray-300 hover:text-white transition-colors duration-200">Call for Papers</a>
               </li>
               <li>
@@ -52,6 +55,9 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#registration" className="text-gray-300 hover:text-white transition-colors duration-200">Registration</a>
+              </li>
+              <li>
+                <a href="#committees" className="text-gray-300 hover:text-white transition-colors duration-200">Committees</a>
               </li>
               <li>
                 <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-200">Contact</a>
