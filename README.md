@@ -1,7 +1,8 @@
 
 ## Project info
 
-**URL**: 
+**URL**: https://icdsne-2025.netlify.app/
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
